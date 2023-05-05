@@ -16,6 +16,7 @@ body {
 
 .container {
     width: 50%;
+    user-select: none;
     height: 50%;
     background-color: darkslateblue;
     display: flex;
@@ -30,6 +31,13 @@ body {
     width: 100%;
     height: 75%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 800%;
+    font-family: fo;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 /* .left {
@@ -58,4 +66,49 @@ body {
     gap: 2vh;
     text-align: center;
     padding: 2vh 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.plus {
+    font-family: fo;
+    font-size: 2.5rem;
+    width: 30%;
+    height: 70%;
+    border: 2px solid #ffffff;
+    border-radius: 10%;
+    /* padding: 0.5vh; */
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+}
+
+.plus div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: fo;
+    src: url("./curse.ttf");
+}
+
+.plus div:hover {
+    background-color: #ffffff;
+    color: black;
+    scale: 1.1;
+    transition: all 0.5s ease-in-out;
 }
